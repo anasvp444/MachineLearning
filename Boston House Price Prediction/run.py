@@ -61,9 +61,9 @@ def index():
                 client_data = [[room, poverty, ratio]]
                 price = reg.predict(client_data)
                 price = ("$%0.2f" % reg.predict(client_data)[0])
-                return render_template('index.html',price = price)
+                return render_template('index.html',price = price,room = room, poverty = poverty, ratio = ratio )
             else:
-                return render_template('index.html',price = "")
+                return render_template('index.html',price = "", room = "_", poverty = "_", ratio = "_")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)            
