@@ -1,0 +1,1162 @@
+WEBVTT
+
+00:00.690 --> 00:06.150
+Hi and welcome to chapter eighteen point three where we're going to build a deep surveillance facial
+
+00:06.150 --> 00:10.980
+monitoring system that combines emotion age and gender recognition.
+
+00:11.010 --> 00:15.910
+So now let's go into an update on that book and our virtual machine and start building this.
+
+00:16.200 --> 00:16.530
+OK.
+
+00:16.560 --> 00:18.170
+So we're in chapter 18.
+
+00:18.240 --> 00:20.380
+No footnote but book for this.
+
+00:20.640 --> 00:28.650
+But is no 18.00 Reiffel notebook file whereas it is actually in here into to make it to quickly into
+
+00:28.650 --> 00:31.110
+the age gender estimation for the hill.
+
+00:31.110 --> 00:31.460
+All right.
+
+00:31.470 --> 00:32.820
+So click it.
+
+00:32.940 --> 00:39.870
+And what this is this is basically a guitar project I pulled it for one of the best one of the better
+
+00:39.870 --> 00:42.740
+ones I should say for age and gender detection.
+
+00:43.020 --> 00:47.820
+And the reason why I don't get it is for this code and what we're going to do we're going to use his
+
+00:47.820 --> 00:52.500
+Pretorian model is mainly because it's this data set and it's.
+
+00:52.760 --> 00:53.750
+It's not loaded here.
+
+00:53.890 --> 00:58.320
+I hope it always will be taken up way too much space probably isn't.
+
+00:58.320 --> 01:03.390
+But it's still said that he create He loaded he turned it on is quite large and I actually did have
+
+01:03.390 --> 01:11.670
+a project prior to this where we were treating it on that dataset for age and stuff stop it's OK for
+
+01:11.670 --> 01:14.280
+age and that's why.
+
+01:14.620 --> 01:14.920
+OK.
+
+01:14.970 --> 01:18.240
+In fact the dataset is here is not good at all.
+
+01:18.240 --> 01:18.490
+All right.
+
+01:18.510 --> 01:21.380
+So I'm going to leave that before I give it to you guys.
+
+01:21.390 --> 01:23.070
+All right back to this.
+
+01:23.130 --> 01:23.690
+OK.
+
+01:24.030 --> 01:28.680
+So either way when you're trying this model you actually can train his on his model here.
+
+01:28.820 --> 01:29.170
+All right.
+
+01:29.190 --> 01:30.560
+He has the code to train.
+
+01:30.630 --> 01:35.180
+However it is not quick and it is basically a standard training procedure.
+
+01:35.190 --> 01:39.490
+What we have done before but it is not worth the effort to do in a CPE use system.
+
+01:39.510 --> 01:45.780
+So I said you know what we will just actually just use our Pretorian models and we will just Pretorian
+
+01:45.780 --> 01:52.860
+model and it's a good exercise to basically executing someone else's model is actually it may seem like
+
+01:52.860 --> 01:55.620
+cheating sometimes but you can learn a lot.
+
+01:55.620 --> 01:56.180
+All right.
+
+01:56.220 --> 01:58.120
+So I'll quickly.
+
+01:58.150 --> 01:59.970
+This is his project here.
+
+02:00.180 --> 02:01.270
+Let's bring this up.
+
+02:01.290 --> 02:02.780
+All right.
+
+02:03.250 --> 02:07.890
+First what are we going to do is basically because he has some of the books he should actually label
+
+02:08.100 --> 02:09.290
+what our minds are.
+
+02:09.540 --> 02:11.350
+So student quickly.
+
+02:11.400 --> 02:11.660
+All right.
+
+02:11.670 --> 02:18.030
+So this is going to be eighteen point tree it's called us.
+
+02:18.770 --> 02:20.660
+And second one we're going to run right after.
+
+02:20.690 --> 02:26.360
+So we combine them both because firstly what we're going to run is his age and gender detector and Despard
+
+02:26.400 --> 02:28.600
+be eighteen point tree.
+
+02:28.710 --> 02:30.700
+B look at.
+
+02:30.750 --> 02:32.080
+So now let's bring this up.
+
+02:32.180 --> 02:33.420
+Stick a look at this.
+
+02:35.020 --> 02:35.370
+Right.
+
+02:35.380 --> 02:36.960
+So this is what I think I wanted.
+
+02:36.990 --> 02:39.440
+This was his get help for his project.
+
+02:39.460 --> 02:40.240
+OK.
+
+02:40.690 --> 02:43.020
+Now I believe this was him.
+
+02:43.060 --> 02:47.860
+If I'm not mistaken there was a slight issue with his project that didn't run off the bat and I had
+
+02:47.860 --> 02:49.400
+to make some changes in the file.
+
+02:49.720 --> 02:51.540
+Luckily I did make the changes in the file.
+
+02:51.540 --> 02:56.620
+So if you you don't have to put this code from scratch his code is already in this field that we saw
+
+02:56.620 --> 02:57.680
+here.
+
+02:57.700 --> 03:03.070
+So basically he what's good about this still is that he does give some instructions some if you wanted
+
+03:03.070 --> 03:08.690
+to actually train the model on you and he can trance on different data sets as well.
+
+03:08.710 --> 03:11.460
+This is that is that he included in his file.
+
+03:11.860 --> 03:17.000
+You can train Athill or you can use some of his demo file is the file we are actually going to.
+
+03:17.280 --> 03:19.040
+That's the way it's open.
+
+03:19.060 --> 03:21.690
+And you can see it here.
+
+03:21.810 --> 03:27.160
+We don't want to doing it because I already have downloaded it and basically have been trapped under
+
+03:27.200 --> 03:28.980
+I MVB basically this.
+
+03:29.080 --> 03:31.910
+I am D-B data here talks about here.
+
+03:31.910 --> 03:37.520
+Basically someone's script I am divvies Web site you know Internet Movie Database website extracted
+
+03:37.520 --> 03:43.520
+defaces and actually labeled the ages and gender which might have been a quite tedious task but they
+
+03:43.520 --> 03:44.150
+did it.
+
+03:44.180 --> 03:44.730
+OK.
+
+03:45.080 --> 03:47.350
+So these are his results here.
+
+03:47.420 --> 03:52.730
+His Pretorian model is lost is quite low for age and gender.
+
+03:52.730 --> 03:53.860
+Not that low in the end.
+
+03:53.870 --> 03:55.490
+But it's fine.
+
+03:55.670 --> 04:03.700
+And so he probably stopped at some pre-trained really something and got the Marlow's out before accuracy
+
+04:04.100 --> 04:05.720
+and the stuff went to hell.
+
+04:05.720 --> 04:07.370
+Actually I'm looking at around accuracy.
+
+04:07.490 --> 04:10.600
+This is a one blue green and blue.
+
+04:10.690 --> 04:13.040
+Like I said fine either way.
+
+04:13.090 --> 04:15.080
+Definitely we're sitting here
+
+04:18.070 --> 04:22.800
+actually is not fitting that is actually on his training data set.
+
+04:22.840 --> 04:25.250
+So this kind of results to be fair.
+
+04:25.260 --> 04:25.890
+All right.
+
+04:26.110 --> 04:28.110
+Either way it worked fine.
+
+04:28.120 --> 04:34.690
+And as an exercise for you guys if you're very if you're interested in seeing how this works his code
+
+04:34.690 --> 04:35.510
+is here.
+
+04:35.630 --> 04:37.360
+It's fairly well documented as well.
+
+04:37.390 --> 04:42.460
+So you can take a look and try doing some cool stuff with this what we're doing now is using his preaching
+
+04:42.460 --> 04:42.860
+model.
+
+04:42.890 --> 04:51.010
+So basically extracted the code from his project code is code and doing it here and I it in the book.
+
+04:51.010 --> 04:56.110
+So let's step through this code quickly it's not that different than the previous code just some little
+
+04:56.110 --> 04:57.810
+things you should note.
+
+04:57.880 --> 05:04.220
+Firstly this is how we load his model and we have to specify a hash when we look at his model.
+
+05:04.360 --> 05:08.530
+So go back to our face detector results.
+
+05:08.530 --> 05:09.950
+This is what gives us our faces.
+
+05:09.970 --> 05:14.220
+And this is what displays our results actually.
+
+05:14.470 --> 05:15.340
+Let me just check something.
+
+05:15.340 --> 05:17.610
+I don't believe I'm using that function any more.
+
+05:17.980 --> 05:20.420
+And I am right I am not using it anymore.
+
+05:20.430 --> 05:23.700
+So that's to it on.
+
+05:23.760 --> 05:25.050
+Totally unnecessary.
+
+05:25.050 --> 05:26.400
+All right.
+
+05:26.400 --> 05:29.020
+So now these are the moral premises here.
+
+05:29.220 --> 05:29.900
+OK.
+
+05:30.270 --> 05:31.360
+Just say no.
+
+05:31.380 --> 05:34.040
+Can I leave this alone ok dept OK.
+
+05:34.100 --> 05:39.230
+With none is all the specific specifications for loading his model.
+
+05:39.270 --> 05:39.820
+OK.
+
+05:39.990 --> 05:41.180
+His pre-trained weights.
+
+05:41.190 --> 05:46.850
+So we do that so we have his model we loaded it we got the weights and everything from his model and
+
+05:46.870 --> 05:50.770
+each the EF 5 format.
+
+05:51.080 --> 05:54.450
+So no set up stuff.
+
+05:54.630 --> 05:55.820
+We get his model.
+
+05:55.920 --> 06:00.250
+Fitbit does or does not go with his model here and model that load.
+
+06:00.270 --> 06:02.600
+So we get his model now officially.
+
+06:02.600 --> 06:03.420
+All right.
+
+06:03.810 --> 06:06.500
+So we initialize a webcam here.
+
+06:06.510 --> 06:10.940
+Standard stuff we said is if you've seen before we get this.
+
+06:11.070 --> 06:15.840
+Now what I've done I've made some changes to this code because the previous code didn't tell you.
+
+06:15.900 --> 06:21.780
+But if a second person appeared in the diagram it would only show one if you guys are the time it doesn't
+
+06:21.780 --> 06:23.210
+show more than one face.
+
+06:23.360 --> 06:25.380
+Oh it may have him trash.
+
+06:25.410 --> 06:27.380
+I'm not even sure you can do it.
+
+06:27.390 --> 06:28.360
+Bring a friend.
+
+06:28.730 --> 06:29.040
+OK.
+
+06:29.130 --> 06:31.250
+I have no friends with me right right now the wife is out.
+
+06:31.320 --> 06:32.370
+So I can't test that.
+
+06:32.640 --> 06:33.970
+But that's OK.
+
+06:33.990 --> 06:37.910
+So this is how actually got it to work with multiple faces.
+
+06:37.920 --> 06:40.340
+So we do this here.
+
+06:41.130 --> 06:47.430
+Basically we append the faces we extract here and then what we do we use his model that we loaded here
+
+06:48.050 --> 06:51.200
+to make a prediction and this prediction gives us two things.
+
+06:51.220 --> 06:54.450
+Gender first very male female.
+
+06:54.540 --> 06:59.640
+I know there are many agendas right now but for now is history in the male and female because the genders
+
+07:00.070 --> 07:03.270
+will still look like male or female either way.
+
+07:03.270 --> 07:04.070
+So that's fine.
+
+07:04.340 --> 07:04.930
+All right.
+
+07:05.920 --> 07:08.600
+And so we have predicted ages here as well.
+
+07:08.890 --> 07:12.580
+And this is all in a bit of a funny shape here.
+
+07:12.820 --> 07:14.380
+So he does some reshipping.
+
+07:14.400 --> 07:14.730
+All right.
+
+07:14.770 --> 07:15.640
+And flattens it.
+
+07:15.680 --> 07:17.380
+And then we get the results here.
+
+07:17.380 --> 07:20.430
+So we get the predicted ages and this is good.
+
+07:20.520 --> 07:20.900
+All right.
+
+07:20.920 --> 07:21.470
+So we get it.
+
+07:21.470 --> 07:28.270
+No no what we're going to do since we have multiple we possibly have multiple cases in this file is
+
+07:28.270 --> 07:34.850
+that we go through defaces and go through the results and display the results later on here.
+
+07:35.380 --> 07:36.170
+OK.
+
+07:36.700 --> 07:38.250
+And that is it.
+
+07:38.260 --> 07:40.110
+This is what runs forward.
+
+07:40.120 --> 07:41.290
+Age and gender.
+
+07:41.620 --> 07:42.930
+So let's give it a try.
+
+07:47.660 --> 07:51.400
+Slutting probably a learning model.
+
+07:51.410 --> 07:52.280
+There we go.
+
+07:52.310 --> 07:53.950
+So that is pretty awesome.
+
+07:54.260 --> 08:00.950
+All right what I'm going to do going to bring up a picture of my funny face and try to simulate this
+
+08:01.010 --> 08:05.960
+with another person or a pretend person we're going to use
+
+08:10.180 --> 08:12.540
+I guess is actually hard and I taught
+
+08:17.740 --> 08:18.030
+it.
+
+08:18.120 --> 08:24.160
+So my friend here she has some good face pictures.
+
+08:24.270 --> 08:27.200
+I hope she's OK with me using this right.
+
+08:27.600 --> 08:30.700
+OK so I'm going to bring this up here.
+
+08:36.270 --> 08:36.560
+OK.
+
+08:36.600 --> 08:41.530
+So this is me this is my friend is not detecting.
+
+08:41.550 --> 08:42.200
+Oh there we go.
+
+08:43.220 --> 08:44.630
+Thinks she's a guy.
+
+08:44.680 --> 08:45.790
+I have no idea.
+
+08:45.820 --> 08:47.470
+She doesn't need any of this.
+
+08:47.660 --> 08:49.210
+And so I think she's a guy.
+
+08:49.350 --> 08:52.360
+Now there's a problem here and I hope you can see it.
+
+08:52.480 --> 08:55.630
+And I did actually see it in the code and didn't mention it to you guys because I was like wondering
+
+08:56.260 --> 08:59.690
+how it doesn't work the way it does supposed to doesn't it.
+
+08:59.920 --> 09:06.790
+And that's because exactly as I said it will detect the faces here but it only draws results for one
+
+09:06.790 --> 09:09.760
+prediction here because it's not a pending results results.
+
+09:09.760 --> 09:12.700
+In theory this is something I fix later on.
+
+09:12.700 --> 09:15.240
+By the way so for now though just be aware.
+
+09:15.250 --> 09:21.800
+At this age and gender detector only technically detects one face at a time not two.
+
+09:22.240 --> 09:26.020
+And basically this is something I also noted here.
+
+09:26.320 --> 09:27.850
+If you get this early.
+
+09:27.970 --> 09:30.900
+This is the area you'll see here faces not being detected.
+
+09:31.120 --> 09:33.430
+It's because your webcam has not been turned on.
+
+09:33.430 --> 09:41.260
+So basically if this happened this happens just go to devices and webcams and tick tick tick off.
+
+09:41.320 --> 09:41.890
+OK.
+
+09:42.520 --> 09:43.250
+So that is that.
+
+09:43.270 --> 09:48.790
+And if whatever reason this program crashes when you're messing with the code and the webcam isn't released
+
+09:49.060 --> 09:55.120
+that will happen quite often I'm sure just run this line separately to reclaim your webcam so that you
+
+09:55.120 --> 09:58.220
+can re-initialize it again later on.
+
+09:58.240 --> 09:58.570
+OK.
+
+09:58.660 --> 10:03.410
+So no that was age and gender and a Eating point tree.
+
+10:03.640 --> 10:04.330
+Now let's do.
+
+10:04.330 --> 10:06.630
+Age and gender with emotions.
+
+10:06.640 --> 10:08.430
+That's the cool part.
+
+10:08.680 --> 10:10.800
+That's deep surveillance partner.
+
+10:10.810 --> 10:18.100
+So again let's load all of this 10 seconds wasted of my life again.
+
+10:19.810 --> 10:24.610
+Yoga seemed faster this time maybe me complain.
+
+10:25.130 --> 10:25.460
+OK.
+
+10:25.550 --> 10:30.290
+So no this is testing emotion agent and using a webcam.
+
+10:30.430 --> 10:37.350
+Now I'm not going to go through this code in super detail because it is a bit messy.
+
+10:37.880 --> 10:43.640
+However what I'm going to tell you is that I have manipulated this code to support two faces.
+
+10:43.640 --> 10:44.590
+All right.
+
+10:44.720 --> 10:46.800
+So let's give this ago.
+
+10:47.270 --> 10:49.880
+Bring up my friend's Instagram picture again
+
+10:54.990 --> 10:55.330
+OK.
+
+10:55.360 --> 10:57.490
+So we got an error.
+
+10:57.610 --> 10:59.050
+Color is not defined.
+
+10:59.210 --> 11:02.290
+Like I'm going to pause this and see what is happening here.
+
+11:02.770 --> 11:04.430
+I know exactly what's happening.
+
+11:04.480 --> 11:07.040
+I was trying to do some color manipulation before.
+
+11:07.260 --> 11:07.540
+OK.
+
+11:07.610 --> 11:12.140
+CBG are Spudis get back green OK.
+
+11:12.240 --> 11:13.430
+It is going to.
+
+11:13.700 --> 11:18.780
+Oh dammit what happened is that it claimed my webcam.
+
+11:18.940 --> 11:21.900
+It's not going to get an image.
+
+11:21.910 --> 11:27.850
+So what we can do as I mentioned before and I did not put it in this file accessible area just put a
+
+11:27.850 --> 11:34.690
+cell below and reclean my webcam so I can run this finally again
+
+11:37.860 --> 11:38.720
+I attempted it.
+
+11:38.750 --> 11:39.300
+There we go.
+
+11:40.460 --> 11:42.150
+So yeah I'm not actually sad.
+
+11:42.260 --> 11:44.710
+I don't know why it's tinks I'm sad no neutral.
+
+11:45.060 --> 11:50.230
+And bring up the multiple face Gladys's Merde is confusing.
+
+11:52.290 --> 11:55.380
+At still in.
+
+11:55.400 --> 11:58.780
+Why I doing a in front of me.
+
+12:00.900 --> 12:01.850
+All right.
+
+12:01.910 --> 12:03.040
+Come on detect
+
+12:12.320 --> 12:13.630
+get a brief second.
+
+12:13.700 --> 12:15.680
+But let me just bring this.
+
+12:15.760 --> 12:18.800
+This is much easier when you actually have a real person next to you.
+
+12:21.690 --> 12:22.220
+OK.
+
+12:22.420 --> 12:24.430
+I'm going to pause this and get a better picture.
+
+12:24.430 --> 12:25.270
+No offense.
+
+12:25.430 --> 12:27.920
+This picture has not been affected.
+
+12:28.480 --> 12:28.850
+OK.
+
+12:28.990 --> 12:37.920
+So hold one second because the recording that really put it on as fast forward this bit while I just
+
+12:37.920 --> 12:44.240
+waste time like.
+
+12:44.410 --> 12:44.700
+All right.
+
+12:44.710 --> 12:52.290
+So I found a picture of my wife I may use from a Facebook profile maybe I should use like stock images.
+
+12:52.290 --> 12:55.610
+It seems like these images don't have the best luck but we'll never know.
+
+12:55.610 --> 12:55.820
+All right.
+
+12:55.820 --> 12:59.060
+So let's put it in front here.
+
+12:59.240 --> 13:08.560
+I just saw a detective come back from back in says I actually thought it looks because now I can see
+
+13:08.560 --> 13:09.320
+my screen.
+
+13:10.210 --> 13:14.590
+And I can see my face and it's not detecting my face.
+
+13:14.590 --> 13:16.370
+Maybe I should just bring this back slightly.
+
+13:16.380 --> 13:17.320
+There we go.
+
+13:17.830 --> 13:18.230
+OK.
+
+13:18.370 --> 13:24.670
+So I know my wife is going to be happy with this but I think she's a guy who is 24 years old.
+
+13:24.940 --> 13:31.160
+Probably because it's from a cell phone and the skill is definitely going to be off because of it.
+
+13:31.450 --> 13:33.930
+I'm 28 when I'm 24.
+
+13:34.330 --> 13:35.400
+Damn you.
+
+13:35.500 --> 13:37.230
+Sorry to deduct it.
+
+13:37.570 --> 13:37.830
+OK.
+
+13:37.870 --> 13:40.620
+When it starts kind of to kind of going to hold.
+
+13:40.660 --> 13:45.940
+All right so what this means here is that this code works.
+
+13:45.940 --> 13:52.420
+It's not exactly 100 percent accurate with gender detection as we can see but that probably has to do
+
+13:52.420 --> 13:53.590
+with my little fake friends.
+
+13:53.590 --> 13:55.210
+I'm using my cell phone.
+
+13:55.240 --> 13:57.010
+These people are REAL by the way.
+
+13:57.380 --> 14:02.790
+But either way this should not happen that way but it works it works.
+
+14:02.800 --> 14:06.810
+It's good that is directing multiple pictures multiple people.
+
+14:06.820 --> 14:07.120
+All right.
+
+14:07.120 --> 14:09.500
+So this is good.
+
+14:09.550 --> 14:13.680
+Let's move on to the next one images so let's run this
+
+14:19.570 --> 14:23.060
+OK so now let's run this test on images.
+
+14:23.070 --> 14:23.560
+OK.
+
+14:23.560 --> 14:27.300
+You did not load anything in my bed
+
+14:30.260 --> 14:31.460
+not that or
+
+14:38.140 --> 14:38.620
+OK.
+
+14:38.630 --> 14:44.480
+So let's test this on some test images and you can place those images in the images folder.
+
+14:44.930 --> 14:45.550
+Will show you here.
+
+14:45.590 --> 14:45.910
+OK.
+
+14:45.980 --> 14:49.840
+So let's look at Donald Trump oh this is quite funny.
+
+14:49.950 --> 14:57.440
+I think it's a female 59 looks much older in my opinion but fifty nine and said It's me again.
+
+14:57.460 --> 15:01.050
+I did some extra years to me because I'm actually actually 24.
+
+15:01.140 --> 15:02.310
+But fair enough.
+
+15:03.940 --> 15:04.330
+All right.
+
+15:04.330 --> 15:06.560
+Queen Elizabeth and something funny is happening.
+
+15:06.640 --> 15:10.930
+It actually thinks this bouquet of roses is a guy who took the ideas off.
+
+15:11.170 --> 15:16.360
+Clearly this is a bad example of Mitt not working too well.
+
+15:16.840 --> 15:17.710
+But there's a reason for that.
+
+15:17.720 --> 15:18.870
+I'll tell you afterwards.
+
+15:18.910 --> 15:19.800
+OK.
+
+15:20.470 --> 15:21.270
+Barack Obama.
+
+15:21.460 --> 15:24.260
+Male angry to the one not the best.
+
+15:24.400 --> 15:25.480
+Is my wife.
+
+15:25.480 --> 15:30.870
+Female tity she actually was tastiness Richardsons quite good and she was definitely happy here.
+
+15:31.100 --> 15:31.590
+All right.
+
+15:31.660 --> 15:35.350
+She was actually this was the two days of the pictures were two days apart.
+
+15:35.380 --> 15:37.860
+So she aged a year in those two days.
+
+15:38.260 --> 15:38.560
+OK.
+
+15:38.590 --> 15:40.040
+So that's cool.
+
+15:40.240 --> 15:41.750
+Now I said I'll tell you why.
+
+15:42.010 --> 15:49.350
+That's because when we were doing this here we were basically Horncastle pacifies don't crop enough
+
+15:49.350 --> 15:55.090
+of the face out even with the default settings here which are removed because you may have seen it in
+
+15:55.100 --> 16:01.710
+a court because it just cut and paste some of these images discotheques or videos before we actually
+
+16:01.710 --> 16:04.070
+had some cropping being done.
+
+16:04.140 --> 16:07.080
+And I took it out because it was less accurate.
+
+16:07.410 --> 16:10.350
+But now anyway so you libs facial recognition.
+
+16:10.350 --> 16:12.380
+Let's give this a try.
+
+16:12.390 --> 16:13.470
+Let's quickly run this
+
+16:17.750 --> 16:19.830
+and I'll tell you about dealing with starting in the back row here.
+
+16:19.850 --> 16:21.180
+I'll tell you about dealer dealer.
+
+16:21.220 --> 16:27.460
+It is it's a machine learning basically package that was built in C++ and you can use it into Python
+
+16:27.800 --> 16:29.210
+and it does a bunch of cool stuff.
+
+16:29.210 --> 16:34.430
+And what I'm using it here for is for phase detection but it actually can do facial recognition.
+
+16:34.460 --> 16:39.480
+In my open C-v course in the past I haven't included in discourse.
+
+16:39.590 --> 16:47.170
+You actually do use Nonpoint recognition on faces for some cool projects like your detection and the
+
+16:47.540 --> 16:50.400
+swaps as well more advanced with swaps.
+
+16:50.390 --> 16:50.680
+All right.
+
+16:50.740 --> 16:53.660
+So I'm sorry I'm retarded.
+
+16:53.780 --> 16:55.690
+We are using the live on images here.
+
+16:55.700 --> 17:00.110
+I really should label this that I think in the last section used to live on the webcam.
+
+17:00.140 --> 17:01.120
+Yes.
+
+17:01.250 --> 17:01.970
+OK.
+
+17:02.120 --> 17:02.980
+So again.
+
+17:03.100 --> 17:04.280
+So it actually is.
+
+17:04.340 --> 17:08.820
+Now a trump he actually aged two years less fend off me.
+
+17:08.980 --> 17:09.420
+Oh.
+
+17:09.430 --> 17:10.790
+You know when you're younger.
+
+17:10.790 --> 17:11.900
+That's good.
+
+17:12.830 --> 17:14.130
+Fifty four female OK.
+
+17:14.200 --> 17:14.980
+Fair enough.
+
+17:14.980 --> 17:16.420
+She has a lot.
+
+17:16.610 --> 17:18.030
+In that picture.
+
+17:18.580 --> 17:20.200
+That's fine.
+
+17:20.290 --> 17:21.500
+Tony correct.
+
+17:21.970 --> 17:27.220
+Barack Obama 45 I think he was in his late 40s and this picture may be very very accurate actually is
+
+17:27.220 --> 17:28.760
+quite close.
+
+17:29.180 --> 17:35.590
+And my wife she would not be happy with each year but it's fair enough again because she was Tuti in
+
+17:35.590 --> 17:36.670
+those pictures.
+
+17:37.000 --> 17:37.950
+OK but fair enough.
+
+17:37.950 --> 17:39.860
+So you can experiment with some different things.
+
+17:39.860 --> 17:41.500
+You know it's not going to be perfect.
+
+17:41.500 --> 17:45.440
+Age is actually a very hard thing to guess.
+
+17:45.460 --> 17:52.870
+I myself sometimes have thought someone was to be in it today 25 or 26 and I learned later they were
+
+17:52.870 --> 17:59.130
+like 50 which was embarrassing but they were very happy about my mis take.
+
+17:59.140 --> 18:04.170
+So anyway we can run this with the lab using the webcam so I'm going on this.
+
+18:04.300 --> 18:09.660
+And I've changed my T-shirt by the way back to the one with stain unfortunately.
+
+18:09.910 --> 18:12.340
+Hope it isn't picked up in this camera.
+
+18:12.340 --> 18:14.070
+No it does not.
+
+18:14.380 --> 18:15.620
+And the bedroom doesn't open.
+
+18:15.640 --> 18:16.660
+Yeah it's fine.
+
+18:16.960 --> 18:18.280
+So again this is quite cool.
+
+18:18.280 --> 18:22.570
+You can definitely see dealer has a slew of film right here OK.
+
+18:22.940 --> 18:27.290
+And literally did my hair thing five seconds 10 seconds before.
+
+18:27.610 --> 18:27.970
+OK.
+
+18:28.120 --> 18:29.820
+So close.
+
+18:30.340 --> 18:35.020
+So the advantage of the lid though is that it is better at picking up faces.
+
+18:35.050 --> 18:40.600
+One thing you should have noted noted here is that it didn't mystic Queen Elizabeth's bouquet for a
+
+18:40.600 --> 18:43.610
+face like what a hawk husky classified did.
+
+18:43.870 --> 18:47.170
+So you can generally see that as better and more robust.
+
+18:47.180 --> 18:53.650
+Remember for Cutie Caskie classifies it or this was a face that it was a guy which I would think it
+
+18:53.640 --> 18:54.240
+was a female.
+
+18:54.310 --> 18:57.660
+Either way if it was a face that is.
+
+18:58.270 --> 19:00.340
+But that's fine.
+
+19:00.340 --> 19:04.650
+So what I'm saying Bakassi cast philosophise a definitely faster.
+
+19:04.920 --> 19:09.850
+So if speed is your concern or if your hardware if it's an embedded system you can use Hawkhurst justifies
+
+19:10.300 --> 19:16.920
+and maybe tweak some of the parameters like this scaling parameters especially this definitely helps.
+
+19:16.960 --> 19:23.770
+But these settings are generally well understood as the gold standard Woodhall Cascades like this is
+
+19:23.780 --> 19:27.330
+the best depending on your application.
+
+19:27.350 --> 19:29.020
+But generally this is the best.
+
+19:29.500 --> 19:35.590
+So a dealer may be more suited for some applications if its accuracy especially is of importance.
+
+19:35.590 --> 19:37.540
+OK so that's it for this chapter.
+
+19:37.540 --> 19:42.160
+I hope you enjoyed it and I hope you build something cool out of this and I hope you expand upon it
+
+19:42.160 --> 19:42.490
+too.
+
+19:42.510 --> 19:47.980
+You can actually take this code now and train and train over these models or add in some new stuff as
+
+19:47.980 --> 19:48.370
+well.
+
+19:48.490 --> 19:50.010
+And ethnicity as well.
+
+19:50.020 --> 19:57.380
+You can actually now take some of this data sets here like this one for one and maybe you can if you
+
+19:57.380 --> 20:02.410
+can find like a label that you can manually label the agenda from this as well to get even more accurate
+
+20:02.470 --> 20:04.060
+gender recognition.
+
+20:04.060 --> 20:05.310
+So this is pretty cool.
+
+20:05.350 --> 20:12.850
+And the challenge and in bringing both of these together which I probably failed to mention is that
+
+20:13.530 --> 20:16.260
+they're both taking different sized faces to boot.
+
+20:16.270 --> 20:18.940
+One is ticking and ticking in a color image.
+
+20:19.120 --> 20:20.790
+That's the age and gender sticking.
+
+20:20.820 --> 20:26.730
+Taking in a color image that's 64 by 64 whereas the other one which is all in motion detectors ticking
+
+20:26.800 --> 20:30.410
+in a smaller and gray scale image.
+
+20:30.460 --> 20:34.780
+So you have to sort of do some a little more processing here in our pipeline.
+
+20:35.020 --> 20:41.180
+And basically then you have to get the results and make sure they're lined up like the same face is
+
+20:41.200 --> 20:47.590
+tied together with his agent and the emotion which is fairly easy anyway and then plus and take it correctly
+
+20:47.590 --> 20:51.480
+and then making sure the labels follow the face around the image.
+
+20:51.520 --> 20:54.390
+So it was a fun piece of code to build.
+
+20:54.400 --> 20:55.270
+To be fair.
+
+20:55.470 --> 20:55.760
+But.
